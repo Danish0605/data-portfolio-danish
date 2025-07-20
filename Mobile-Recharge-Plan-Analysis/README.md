@@ -30,4 +30,15 @@ This SQL-based project analyzes recharge behavior across prepaid telecom plans o
 - Airtel’s ₹299 plan saw consistent usage across multiple regions
 - Inactivity detected for 10 customers with no recharge in the last 20 days
 
+## 🖼️ Screenshot Output Summary
+
+- **Top Spenders**  
+  Displays customers ranked by total recharge amount using `SUM(Amount)` grouped by name. Highlights high-value users for targeted promotions.
+
+- **Recharge Spend by Age Group**  
+  Categorizes spending based on customer age brackets, showing which age groups are more likely to recharge higher-value plans.
+
+- **Churn Candidates/In Active Customers**  
+  Flags customers who haven’t recharged for over 30 days using `DATEDIFF()` logic, useful for identifying potential churn or re-engagement targets.
+
 📍 Built for data analyst portfolio · Powered by SQL Server · Bengaluru
