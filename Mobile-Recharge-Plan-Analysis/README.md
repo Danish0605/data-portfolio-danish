@@ -5,7 +5,7 @@ This SQL-based project analyzes recharge behavior across prepaid telecom plans o
 ## 📁 Project Files
 
 - `schema.sql` – Table creation for `Customers` and `Recharges`
-- `insert.sql` – Over 100 recharge transactions with repeated plan usage and varied customer behavior
+- `insert.sql` – Over 50 recharge transactions with repeated plan usage and varied customer behavior
 - `queries.sql` – Analytical queries covering recharge trends, unique user counts, spending tiers, and churn indicators
 
 ## 🎯 Project Objectives
@@ -25,9 +25,9 @@ This SQL-based project analyzes recharge behavior across prepaid telecom plans o
 
 ## 💡 Sample Insights
 
-- The ₹399 Jio plan had the highest usage, favored by over 20 customers
-- Spending tiers revealed 6 high spenders with transactions above ₹1000
+- The ₹239 Jio plan had the highest usage, favored by over 10 customers
+- Spending tiers revealed 1 high spender with transactions above ₹1000
 - Airtel’s ₹299 plan saw consistent usage across multiple regions
-- Inactivity detected for 4 customers with no recharge in the last 30 days
+- Inactivity detected for 10 customers with no recharge in the last 20 days
 
 📍 Built for data analyst portfolio · Powered by SQL Server · Bengaluru
