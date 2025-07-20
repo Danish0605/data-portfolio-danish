@@ -27,7 +27,7 @@ ORDER BY TOP_SPENDERS DESC;
 SELECT Name
 FROM Customers
 WHERE Customer_ID NOT IN (
-    SELECT Customer_ID FROM Recharges WHERE Recharge_Date >= '2025-06-01'
+    SELECT Customer_ID FROM Recharges WHERE Recharge_Date >= '2025-07-01'
 );
 
 --5.Recharge Spent By Age Group
