@@ -58,3 +58,26 @@ FROM Recharges R
 JOIN Customers C ON R.Customer_ID = C.Customer_ID
 GROUP BY C.Name, R.Plan_Name
 ORDER BY Unique_Users DESC;
+
+--7.Plan with high recharge count
+
+SELECT Plan_Name, COUNT(*) AS Total_Use
+FROM Recharges
+GROUP BY Plan_Name
+HAVING COUNT(*) > 3
+ORDER BY Total_Use DESC;
+
+--8.Spending Tier Classification
+
+SELECT 
+  Name,
+  SUM(Amount) AS Total_Spend,
+  CASE
+    WHEN SUM(Amount) >= 1000 THEN 'High Spender'
+    WHEN SUM(Amount) BETWEEN 500 AND 999 THEN 'Medium Spender'
+    ELSE 'Low Spender'
+  END AS Spend_Category
+FROM Customers C
+JOIN Recharges R ON C.Customer_ID = R.Customer_ID
+GROUP BY Name
+ORDER BY Total_Spend DESC;
