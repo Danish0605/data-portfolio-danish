@@ -47,3 +47,14 @@ GROUP BY
     WHEN Age BETWEEN 25 AND 30 THEN '25–30'
     ELSE 'Above 30'
   END;
+
+--6.Unique customers by Plan
+
+SELECT 
+  C.Name,
+  R.Plan_Name,
+  COUNT(DISTINCT R.Customer_ID) AS Unique_Users
+FROM Recharges R
+JOIN Customers C ON R.Customer_ID = C.Customer_ID
+GROUP BY C.Name, R.Plan_Name
+ORDER BY Unique_Users DESC;
