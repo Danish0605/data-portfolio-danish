@@ -1,44 +1,27 @@
-# 📊 Mobile Recharge Plan Analysis
+# 📊 Recharge Plan Analysis Using SQL
 
-This SQL-based project analyzes recharge behavior across prepaid telecom plans offered by Jio, Airtel, Vi, and BSNL. Using structured customer and transaction data, it delivers insights into plan popularity, customer segmentation, and churn patterns—ideal for showcasing business-focused analytics skills.
+This project analyzes mobile recharge transactions for 20 customers across major Indian telecom providers: Jio, Airtel, Vi, and BSNL. The data simulates 100 recharge events from January to April 2025, designed to surface key patterns in user behavior and plan usage.
 
-## 📁 Project Files
+## 📁 Files Included
 
-- `schema.sql` – Table creation for `Customers` and `Recharges`
-- `insert.sql` – Over 50 recharge transactions with repeated plan usage and varied customer behavior
-- `queries.sql` – Analytical queries covering recharge trends, unique user counts, spending tiers, and churn indicators
+- `schema.sql` — Table creation scripts for `Customers` and `Recharges`
+- `insert.sql` — Full dataset of 100 recharge entries
+- `queries.sql` — Analytical queries covering plan usage, spending tiers, and churn detection
+- `query-results.md` — Insight summary based on query output
 
-## 🎯 Project Objectives
+## 🎯 Objectives
 
-- Identify frequently used recharge plans and their user reach
-- Segment customers based on spending patterns
-- Detect inactive users and potential churn risks
-- Interpret recharge trends using aggregations, filters, and conditional logic
+- Understand which recharge plans are most popular
+- Segment customers by their total spend
+- Identify potential churn cases based on recharge gaps
+- Provide clean SQL output suitable for dashboards or reporting
 
-## 🧠 SQL Techniques Demonstrated
+## 🔧 Technologies Used
 
-- Joins (`INNER JOIN`)
-- Aggregations (`GROUP BY`, `SUM`, `COUNT`, `DISTINCT`)
-- Filtering (`HAVING`, `NOT IN`, `WHERE`)
-- Conditional logic using `CASE`
-- Query optimization for readable and insightful outputs
+- SQL Server (T-SQL)
+- Joins, Aggregation, Grouping, Case logic, Date functions
+- GitHub for version control and project publishing
 
-## 💡 Sample Insights
+## 👨‍💼 About the Analyst
 
-- The ₹239 Jio plan had the highest usage, favored by over 10 customers
-- Spending tiers revealed 1 high spender with transactions above ₹1000
-- Airtel’s ₹299 plan saw consistent usage across multiple regions
-- Inactivity detected for 10 customers with no recharge in the last 20 days
-
-## 🖼️ Screenshot Output Summary
-
-- **Top Spenders**  
-  Displays customers ranked by total recharge amount using `SUM(Amount)` grouped by name. Highlights high-value users for targeted promotions.
-
-- **Recharge Spend by Age Group**  
-  Categorizes spending based on customer age brackets, showing which age groups are more likely to recharge higher-value plans.
-
-- **Churn Candidates/In Active Customers**  
-  Flags customers who haven’t recharged for over 30 days using `DATEDIFF()` logic, useful for identifying potential churn or re-engagement targets.
-
-📍 Built for data analyst portfolio · Powered by SQL Server · Bengaluru
+Built by Danish, an aspiring data analyst with hands-on SQL proficiency, persistent debugging skills, and strong interest in AI-integrated workflows.
