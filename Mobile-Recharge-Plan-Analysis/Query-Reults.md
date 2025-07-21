@@ -7,12 +7,12 @@
   - ₹185 BSNL: **17 uses**, lowest preference
 
 - 💰 Spending Behavior:
-  - **4 High Spenders** crossed ₹1000 total spend
+  - **14 High Spenders** crossed ₹1000 total spend
   - Most users fall into Medium Spenders (₹500–₹1000)
   - Total recharge value across all customers ≈ ₹26,000+
 
 - 💤 Churn Risk:
-  - **10 customers inactive for 20+ days**
+  - **10 customers inactive for 30+ days**
   - Ideal targets for re-engagement campaigns
 
 - 📈 Customer Segmentation:
