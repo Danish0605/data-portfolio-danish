@@ -24,11 +24,12 @@ ORDER BY TOP_SPENDERS DESC;
 
 --4.In Active Customers 
 
-SELECT Name
-FROM Customers
-WHERE Customer_ID NOT IN (
-    SELECT Customer_ID FROM Recharges WHERE Recharge_Date >= '2025-07-01'
-);
+SELECT c.Name, MAX(r.Recharge_Date) AS LastRecharge,
+       DATEDIFF(DAY, MAX(r.Recharge_Date), GETDATE()) AS DaysSinceLastRecharge
+FROM Customers c
+JOIN Recharges r ON c.Customer_ID = r.Customer_ID
+GROUP BY c.Name
+HAVING DATEDIFF(DAY, MAX(r.Recharge_Date), GETDATE()) > 20;
 
 --5.Recharge Spent By Age Group
 
