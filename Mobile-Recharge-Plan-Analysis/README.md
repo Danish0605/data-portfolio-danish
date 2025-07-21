@@ -24,7 +24,7 @@ This project analyzes mobile recharge transactions for 20 customers across major
   
 ## 📸 Excel Dashboard Snapshot
 
-(recharge-dashboard.png)
+(Recharge_Analysis-Dashboard.png)
 *Excel-based dashboard showing plan usage, spend tiers, and churn analysis*
 
 ## 👨‍💼 About the Analyst
