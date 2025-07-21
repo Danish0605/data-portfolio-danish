@@ -21,6 +21,11 @@ This project analyzes mobile recharge transactions for 20 customers across major
 - SQL Server (MS-SQL)
 - Joins, Aggregation, Grouping, Case logic, Date functions
 - GitHub for version control and project publishing
+  
+## 📸 Excel Dashboard Snapshot
+
+(recharge-dashboard.png)
+*Excel-based dashboard showing plan usage, spend tiers, and churn analysis*
 
 ## 👨‍💼 About the Analyst
 
