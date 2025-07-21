@@ -18,7 +18,7 @@ This project analyzes mobile recharge transactions for 20 customers across major
 
 ## 🔧 Technologies Used
 
-- SQL Server (T-SQL)
+- SQL Server (MS-SQL)
 - Joins, Aggregation, Grouping, Case logic, Date functions
 - GitHub for version control and project publishing
 
