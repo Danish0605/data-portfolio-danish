@@ -29,7 +29,7 @@ SELECT c.Name, MAX(r.Recharge_Date) AS LastRecharge,
 FROM Customers c
 JOIN Recharges r ON c.Customer_ID = r.Customer_ID
 GROUP BY c.Name
-HAVING DATEDIFF(DAY, MAX(r.Recharge_Date), GETDATE()) > 20;
+HAVING DATEDIFF(DAY, MAX(r.Recharge_Date), GETDATE()) > 100;
 
 --5.Recharge Spent By Age Group
 
@@ -52,12 +52,11 @@ GROUP BY
 --6.Unique customers by Plan
 
 SELECT 
-  C.Name,
-  R.Plan_Name,
+ Plan_Name,
   COUNT(DISTINCT R.Customer_ID) AS Unique_Users
 FROM Recharges R
 JOIN Customers C ON R.Customer_ID = C.Customer_ID
-GROUP BY C.Name, R.Plan_Name
+GROUP BY Plan_Name
 ORDER BY Unique_Users DESC;
 
 --7.Plan with high recharge count
